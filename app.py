@@ -9,7 +9,7 @@ import requests
 import json
 
 # Setup for flask to initalise (don't change this)
-app = Flask('apiserver')
+app = Flask('app')
 
 # Routes
 @app.route("/")
@@ -50,5 +50,5 @@ def closeScooterView():
     # return some response, in this case the number of scooters close by. We pass the nScooters variable into the response
     return render_template('getscooterresp.html', nearbyNumber=nScooters)
 
-
-app.run(debug=True)
+if __name__ == "__main__":
+    app.run(debug=True)
