@@ -1,0 +1,33 @@
+<doctype html>
+    <html>
+
+    <head>
+        <title>Scootero</title>
+    </head>
+
+    <body>
+        <!-- This is a html comment -->
+        {% if name %}
+        <p>Hello {{name}} </p>
+        {% else %}
+        <p>Hello anonymous person </p>
+        {% endif %}
+
+        <!-- Prompt the user to do something: call to action, with proper instructions. -->
+        <h2>Want to get see the scooters close to you?</h2>
+        <p> Please enter your position with latitude and longitude cordinates in the form below. </p>
+
+        <!-- Define the form that will be displayed -->
+        <!-- Notice the action attribut in the form tag (line 23)
+        this tells the server to pass the formdata to a particular url (where we then can handle it) -->
+        <div id="locate-form">
+            <form method="post" action="/locatescooters">
+                <label for="position">Enter your position:</label>
+                <input type="text" id="lat" name="lat" required="required">
+                <input type="text" id="lat" name="lng" required="required">
+                <input type="submit" value="locate" id="submit-button">
+            </form>
+        </div>
+    </body>
+
+    </html>
