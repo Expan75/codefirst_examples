@@ -21,12 +21,15 @@
 
 6. Navigate to the address given in the terminal (mine was http://127.0.0.1:5000/, but it might differ) using your favourite browser.
 7. Assuming hello world showed up, now try a the <code>/scootero</code> path
-8. Enter a location in the form and press locate :)
+8. Enter a location in the form and press locate. For example: lat=59.330369, lng=18.055123. If you want to try a different location, follow these steps to generate GEOcordinates using googleMaps: <b>https://www.lifewire.com/latitude-longitude-coordinates-google-maps-1683398</b>
+9. Assuming you didn't specify a location where Voi (scooter company) is not currently active, probably you should see the number of nearby scooters!! :)
 
 --
 # Learning Outcomes
 
 <p> Try to understand what the script is doing. If you want to purely have a look at the api part (the part that uses requests) you can try running the api1.py script. Play around with it until you're confident about what happens. Then try going back to the <code>app.py</code> code and go step by step, alternatively adding pring statements to check what happens and <i>when it happens. </p></i>
+
+<p> The main idea is to try to understand how flask and requests can work in conjunction to deliver more complex data (than can then be analysed). We can even return the analysis to the user by passing the data as variables to the front-end, relying on Jinja2 to do the heavy work.</p>
 
 ### Toubleshooting
 
