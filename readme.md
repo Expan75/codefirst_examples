@@ -1,6 +1,18 @@
-###
+### Instructions for runnign flask and API exmaples:
 
-It might be that running this exact will not work on machine. 
+1. Make a new folder that will be your workspace (pref within your existing codefirst folder).
+2. Open up your terminal and type <br><code>$ git init</code>
+3. Clone the repository containing the code example using the command:
+<code>$ git clone https://github.com/Expan75/codefirst_examples.git</code> 
+<br><br>This will create a new folder ('codefirst' underscore 'examples') in your working directory that contains all the code in the repository.
+
+### To run the examples, follow the steps below:
+
+1. Make sure you have all the code that is visible
+
+
+### Toubleshooting
+
 
 While there could be many casuses of this, probably it has to do with your Python version.
 
